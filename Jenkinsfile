@@ -13,7 +13,7 @@ pipeline {
                 steps {
                 git branch: 'master',
                 credentialsId: githubCredential,
-                url: 'https://github.com/Abdul8057/flask-app-project/tree/master'
+                url: 'https://github.com/Abdul8057/flask-app-project.git'
                 }
         }
         
