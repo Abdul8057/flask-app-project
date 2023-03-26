@@ -1,7 +1,7 @@
 def img
 pipeline {
     environment {
-        registry = "abdul8057/python-jenkins" //To push an image to Docker Hub, you must first name your local image using your Docker Hub username and the repository name that you created through Docker Hub on the web.
+        registry = "" //To push an image to Docker Hub, you must first name your local image using your Docker Hub username and the repository name that you created through Docker Hub on the web.
         registryCredential = 'DOCKERHUB'
         githubCredential = 'GITHUB'
         dockerImage = ''
@@ -13,7 +13,7 @@ pipeline {
                 steps {
                 git branch: 'master',
                 credentialsId: githubCredential,
-                url: 'https://github.com/Abdul8057/flask-app-project.git'
+                url: 'https://github.com/Abdul8057/flask-app-project/tree/master'
                 }
         }
         
