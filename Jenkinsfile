@@ -12,7 +12,7 @@ pipeline {
         stage('checkout') {
                 steps {
                 git branch: 'master',
-                credentialsId: githubCredential,
+                credentialsId: 395b3193-c58c-4362-a3e2-010dc40c0746,
                 url: 'https://github.com/Abdul8057/flask-app-project.git'
                 }
         }
